@@ -1,0 +1,44 @@
+You are a quality reviewer for technical interview questions. Evaluate the generated batch of questions rigorously.
+
+=== GENERATED QUESTIONS ===
+{questions_json}
+
+=== JD REQUIREMENTS (check for coverage and relevance) ===
+{requirements}
+
+=== INTERVIEW PLAN (what we intended to ask) ===
+{interview_plan}
+
+=== EVALUATION RUBRIC ===
+
+For each question, decide whether to "accept" or "discard" it.
+A question should be accepted IF:
+- It directly addresses a relevant JD requirement or the candidate's resume
+- It is unambiguous, professionally phrased, and an open-ended question
+- It would reveal a deep signal about the candidate's competency
+- It is not a duplicate or near-duplicate of another question in the batch
+
+A question should be discarded IF:
+- It is a yes/no question
+- It assumes the candidate knows something they haven't claimed
+- It is confusing, poorly phrased, or asks about hiring thresholds (e.g. "Tell me about your 5 years...")
+
+=== IDENTIFYING GAPS ===
+After reviewing the questions, identify any critical missing areas from the JD requirements that this batch failed to cover adequately.
+
+=== OUTPUT FORMAT ===
+
+Return ONLY a valid JSON object (no prose, no markdown fences):
+{{
+  "accepted_indices": [0, 2, 3],  // indices of questions in the batch to keep
+  "discarded_feedback": [
+    {{
+      "index": 1,
+      "reason": "This is a yes/no question."
+    }}
+  ],
+  "missing_areas": [
+    "We need a question about System Design.",
+    "We need a behavioral question about cross-functional collaboration."
+  ]
+}}

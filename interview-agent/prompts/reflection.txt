@@ -1,0 +1,70 @@
+You are a quality reviewer for technical interview questions. Evaluate the question below rigorously.
+
+=== QUESTION TO EVALUATE ===
+{question_json}
+
+=== QUESTION TYPE ===
+{question_type}
+
+=== EXISTING QUESTIONS (check for duplication) ===
+{existing_questions}
+
+=== Target JD Requirement ===
+{target_requirement}
+
+=== EVALUATION RUBRIC ===
+
+Score each criterion from 1 to 5:
+
+1. jd_relevance (1-5)
+   5 = directly addresses a named JD requirement
+   3 = loosely related to the role
+   1 = irrelevant to the JD
+
+2. resume_grounding (1-5)
+   For combined/resume_based: 5 = resume connection is accurate and specific; 1 = fabricated or vague
+   For jd_based: automatically score 5 (not applicable)
+
+3. clarity (1-5)
+   5 = unambiguous, professionally phrased, one clear question
+   3 = somewhat clear
+   1 = confusing or compound question
+
+4. usefulness (1-5)
+   5 = would reveal deep signal about the candidate's competency
+   3 = surface-level signal
+   1 = trivially easy or unanswerable
+
+5. target_skill_alignment (1-5)
+   5 = the question clearly and directly tests the stated target_skill
+   3 = loosely related
+   1 = tests a different skill entirely
+
+6. originality (1-5)
+   5 = meaningfully different from all existing questions in topic and framing
+   3 = similar topic but different angle
+   1 = near-duplicate of an existing question
+
+=== VERDICT RULES ===
+
+- If ANY score is below 3: verdict MUST be "retry"
+- If average score is below 3.5: verdict MUST be "retry"
+- Otherwise: verdict is "accept"
+- Feedback for "retry" MUST be specific and actionable (say exactly what to fix)
+
+=== OUTPUT FORMAT ===
+
+Return ONLY a valid JSON object (no prose, no markdown fences):
+{{
+  "verdict": "accept | retry",
+  "feedback": "Specific explanation. If retry: say exactly what to improve.",
+  "scores": {{
+    "jd_relevance": 0,
+    "resume_grounding": 0,
+    "clarity": 0,
+    "usefulness": 0,
+    "target_skill_alignment": 0,
+    "originality": 0
+  }},
+  "overall_score": 0.0
+}}

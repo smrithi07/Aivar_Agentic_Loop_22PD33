@@ -1,0 +1,33 @@
+Senior Backend Engineer — Distributed Systems
+
+About the Role
+We are looking for a Senior Backend Engineer to join our Platform Engineering team.
+You will own the design, implementation, and reliability of our core microservices
+infrastructure serving 50 million daily active users.
+
+Requirements (Required)
+- 5+ years of professional software engineering experience
+- Strong Python proficiency (3.10+), including async patterns and type hints
+- Deep knowledge of distributed systems concepts: consensus, CAP theorem, eventual consistency
+- REST API design and OpenAPI specification authoring
+- SQL databases: query optimisation, schema design, indexing strategies (PostgreSQL preferred)
+- Experience designing and operating microservices in production
+- Strong understanding of observability: structured logging, metrics, distributed tracing
+- Ability to mentor junior and mid-level engineers
+
+Requirements (Preferred)
+- Kubernetes orchestration and Helm chart authoring
+- Experience with event-driven architectures (Kafka or equivalent)
+- Familiarity with gRPC and Protocol Buffers
+- Cloud infrastructure on GCP or AWS
+- Contributions to open-source projects
+
+Key Responsibilities
+- Design and own multiple backend microservices end-to-end
+- Lead technical design reviews and architecture decisions
+- Drive reliability improvements: SLO/SLA definition, incident response, post-mortems
+- Mentor junior engineers and conduct code reviews
+- Collaborate with product, data, and ML teams to deliver platform features
+
+Compensation
+Competitive salary, equity, and comprehensive benefits.

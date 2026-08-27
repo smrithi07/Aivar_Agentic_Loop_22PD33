@@ -1,0 +1,31 @@
+agent:
+  max_iterations: 20
+  max_retries_per_question: 3
+  stuck_loop_window: 3
+  token_budget: 50000
+
+llm:
+  model: gemini-3.5-flash-lite
+  embedding_model: gemini-embedding-2-preview
+  embedding_dim: 3072
+  temperature: 0.7
+  max_output_tokens: 4096
+
+memory:
+  top_k: 3
+  metadata_path: "memory/metadata.json"
+  faiss_index_path: "memory/faiss.index"
+
+retry:
+  max_attempts: 3
+  base_delay_s: 1.0
+  max_delay_s: 30.0
+
+tools:
+  find_resume_evidence_top_k: 3
+  resume_chunk_min_words: 8
+
+logging:
+  level: "INFO"
+  output: "stdout"
+  log_file: null

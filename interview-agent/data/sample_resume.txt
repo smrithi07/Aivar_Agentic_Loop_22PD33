@@ -1,0 +1,52 @@
+PRIYA SHARMA
+Backend Engineer | priya.sharma@email.com | linkedin.com/in/priya-sharma | github.com/priyatech
+
+SUMMARY
+Backend engineer with 6 years of experience building and operating high-throughput Python
+microservices at scale. Passionate about distributed systems, reliability engineering, and
+mentoring. Led the migration of a legacy monolith to a microservices architecture serving
+40 million users.
+
+EXPERIENCE
+
+Senior Software Engineer — Acme Corp (2021–2024)
+- Led the migration of a 10-year-old Python monolith to 14 microservices using FastAPI,
+  reducing p99 latency by 40% and deployment frequency from monthly to daily.
+- Designed and implemented a distributed rate-limiter using Redis and consistent hashing,
+  handling 120,000 requests/second with sub-5ms overhead.
+- Deployed all services on Google Kubernetes Engine (GKE) across 3 regions (us-central1,
+  eu-west1, asia-east1); authored Helm charts and ArgoCD pipelines for GitOps delivery.
+- Introduced structured JSON logging with OpenTelemetry tracing; reduced MTTR by 35%.
+- Mentored 4 junior engineers; led bi-weekly architecture review sessions.
+- Defined SLOs for 6 critical services and built PagerDuty runbook automation.
+
+Software Engineer — Bravo Tech (2018–2021)
+- Built a Kafka-based event pipeline processing 5 million events/day for the analytics platform.
+- Designed PostgreSQL schema for a multi-tenant SaaS product; optimised slow queries from
+  8s to 200ms using composite indexes and query plan analysis.
+- Implemented a gRPC internal API for service-to-service communication; reduced inter-service
+  latency by 60% vs prior REST calls.
+- Authored OpenAPI 3.0 specifications for all public REST APIs; integrated with Swagger UI.
+
+SKILLS
+Languages:    Python (3.10+), Go (basic), SQL
+Frameworks:   FastAPI, Flask, SQLAlchemy, Pydantic
+Databases:    PostgreSQL, Redis, BigQuery
+Infrastructure: Kubernetes (GKE), Helm, ArgoCD, Terraform, Docker
+Messaging:    Apache Kafka, Google Pub/Sub
+Observability: OpenTelemetry, Prometheus, Grafana, Datadog, PagerDuty
+Cloud:        GCP (primary), AWS (familiar)
+Other:        gRPC, Protocol Buffers, OpenAPI/Swagger
+
+EDUCATION
+B.Tech Computer Science — IIT Bombay (2014–2018)
+GPA: 8.9/10 | Thesis: "Consistent Hashing in Distributed Cache Systems"
+
+OPEN SOURCE
+- Contributor to FastAPI (15 merged PRs, focus on async middleware)
+- Author of fastapiutils (350 GitHub stars): reusable FastAPI middleware for rate limiting
+  and structured logging
+
+CERTIFICATIONS
+- Google Cloud Professional Cloud Architect (2022)
+- Certified Kubernetes Administrator (CKA) (2023)
